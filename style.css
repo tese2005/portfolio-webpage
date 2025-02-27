@@ -1,0 +1,205 @@
+body {
+  background-color: #d8bfd8; /* Light purple to match your wireframe */
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; /* Clean, simple font */
+  line-height: 1.6;
+}
+
+header, nav, section, footer {
+  padding: 20px;
+}
+
+.nav-box {
+  display: flex; /* Line up in a row */
+  justify-content: space-around; /* Spread evenly */
+  background-color: #000; /* Black background to match */
+  padding: 15px;
+}
+
+.nav-box a {
+  color: white; /* White text */
+  font-size: 18px; /* Big letters */
+  text-decoration: none; /* No underlines */
+  padding: 10px;
+  transition: color 0.3s; /* Smooth hover */
+}
+
+.nav-box a:hover {
+  color: #008080; /* Teal on hover */
+}
+
+.home-box, .about-box, .contact-box, .project-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-box {
+  display: flex; /* Side-by-side */
+  align-items: center; /* Line up straight */
+  padding: 20px;
+  background-color: white; /* White box */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Little shadow */
+}
+
+.picture {
+  width: 150px; /* Circle size */
+  height: 150px; /* Square shape */
+  background-color: #ccc; /* Gray placeholder */
+  border-radius: 50%; /* Round like your wireframe */
+  margin-right: 20px; /* Space from words */
+}
+
+.words h1 {
+  font-size: 24px; /* Smaller for first line */
+  color: #333; /* Dark gray text */
+  margin: 0;
+}
+
+.words p {
+  font-size: 16px; /* Normal for second line */
+  color: #333; /* Dark gray text */
+  margin-top: 5px; /* Space between lines */
+}
+
+.about-box {
+  padding: 20px;
+  background-color: white; /* White box */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Little shadow */
+}
+
+h2 {
+  font-size: 24px; /* Medium title */
+  color: #333; /* Dark gray */
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 20px; /* Smaller title for skills */
+  color: #333; /* Dark gray */
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px; /* Normal text */
+  color: #333; /* Dark gray */
+}
+
+ul {
+  list-style-type: none; /* No bullets */
+  padding-left: 0;
+  display: flex; /* Line up skills */
+  gap: 10px; /* Space between */
+  margin: 15px 0; /* Space above and below */
+}
+
+ul li {
+  background-color: #008080; /* Teal boxes like your wireframe */
+  color: white; /* White text */
+  padding: 5px 10px; /* Space inside */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Small text */
+}
+
+.resume {
+  display: inline-block; /* Like a button */
+  background-color: #008080; /* Teal button */
+  color: white; /* White text */
+  padding: 10px 20px; /* Space inside */
+  text-decoration: none; /* No underline */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 15px; /* Space above */
+}
+
+.resume:hover {
+  background-color: #006666; /* Darker teal on hover */
+}
+
+.projects {
+  padding: 20px;
+}
+
+.project-box {
+  display: flex; /* Line up in a row */
+  justify-content: space-between; /* Spread evenly */
+  flex-wrap: wrap; /* Stack on small screens */
+  gap: 20px; /* Space between */
+}
+
+.project {
+  flex: 1; /* Equal space */
+  min-width: 200px; /* Not too skinny */
+  text-align: center; /* Words in middle */
+  background-color: white; /* White box */
+  padding: 15px; /* Space inside */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Little shadow */
+}
+
+.project-pic {
+  width: 100%; /* Fill the box */
+  height: 120px; /* Picture height */
+  background-color: #ccc; /* Gray placeholder */
+  margin-bottom: 10px; /* Space below */
+}
+
+.project p {
+  font-size: 16px; /* Normal text */
+  color: #333; /* Dark gray */
+}
+
+.contact {
+  padding: 20px;
+}
+
+.contact-box {
+  display: flex; /* Stack things up */
+  flex-direction: column; /* One on top */
+  background-color: white; /* White box */
+  padding: 20px; /* Space inside */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Little shadow */
+  border: 2px solid #d8bfd8; /* Purple border to match */
+}
+
+label {
+  font-size: 14px; /* Small text */
+  color: #333; /* Dark gray */
+  margin-bottom: 5px; /* Space below */
+  display: block; /* Each on its own line */
+}
+
+input, textarea {
+  width: 100%; /* Fill the box */
+  padding: 10px; /* Space inside */
+  margin-bottom: 15px; /* Space below */
+  border: 2px solid #d8bfd8; /* Purple border to match */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Normal text */
+  background-color: #ccc; /* Gray background like your wireframe */
+}
+
+textarea {
+  height: 120px; /* Big enough for messages */
+}
+
+button {
+  background-color: #008080; /* Teal button */
+  color: white; /* White text */
+  padding: 10px 20px; /* Space inside */
+  border: none; /* No edge */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Hand shows it’s clickable */
+  font-size: 16px; /* Normal button text */
+}
+
+button:hover {
+  background-color: #006666; /* Darker teal on hover */
+}
+
+footer {
+  text-align: center; /* Words in middle */
+  color: #333; /* Dark gray */
+  font-size: 14px; /* Small text */
+}
